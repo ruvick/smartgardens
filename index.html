@@ -75,26 +75,31 @@
 </header>
 
 		<main class="page">
-			<section id="about" class="about">
+			<section id="first" class="first">
 				<div class="container">
 
-					<div class="age_show">
-						Товары с ценой не выше <span id="price" class="price">100</span>$
+					<div class="first__flex-block d-flex">
+						<div class="first__descrip">
+							<h1>
+								Гидропонная установка <br>
+								у вас дома
+							</h1>
+							<div class="first__price-block d-flex">
+								<div class="first__price-old">5500 <span>руб.</span></div>
+								<div class="first__price-new">2500 <span>руб.</span></div>
+							</div>
+							<p>
+								Выращивайте свежую зелень прямо у себя дома <br>
+								вне зависимости от времени года и погоды на улице
+							</p>
+							<button class="first__btn btn">В КОРЗИНУ</button>
+						</div>
+						<div class="first__slider">
+							<div class="first__slider-img">
+								<img src="img/slider-product/sl-prod-01.png" alt="">
+							</div>
+						</div>
 					</div>
-					<input type="range" id="age" value="100" min="100" max="1000" oninput="changePrice(this.value)"
-						onchange="changePrice(this.value)">
-
-					<!-- 				<form class="header__form" action="#">
-					<input type="text" name="name" placeholder="Имя" class="input">
-					<input type="email" name="email" placeholder="e-mail" class="input__phone">
-					<input type="tel" name="tel" placeholder="Телефон" class="input__phone">
-					<button type="submit" class="form__btn btn">Жду звонка</button>
-					<p>
-						Нажимая на кнопку "Позвоните мне" я даю свое
-						согласие на обработку персональных данных и
-						принимаю условия соглашения
-					</p>
-				</form> -->
 				</div>
 			</section>
 
@@ -126,20 +131,11 @@
 	<div class='footer__container container'>
 		<div class="footer__row d-flex">
 
-			<a href="#" class="header__logo logo-icon">
-				<p>
-					ВЛАДИСЛАВ
-					ПЕНЗИН
-				</p>
-				<span>практикующий психолог</span>
-			</a>
+			<a href="#" class="header__logo logo-icon"></a>
 
 			<ul class="footer__menu">
 				<li><a href="#" class="menu__link">Обо мне</a></li>
 				<li><a href="#" class="menu__link">Услуги</a></li>
-				<li><a href="#" class="menu__link">Вопрос ответ</a></li>
-				<li><a href="#" class="menu__link">Статьи и публикации</a></li>
-				<li><a href="#" class="menu__link">Видеоматериалы</a></li>
 				<li><a href="#" class="menu__link">Контакты</a></li>
 			</ul>
 
@@ -148,22 +144,7 @@
 					<a href="tel:84951700000">8 (495) 170-00-00</a>
 					<p>Звонить с 08:00 до 22:00</p>
 				</div>
-
-				<a href="#" class="footer__link-social">Социальные сети</a>
-
-				<p class="footer__policy">
-					Заполняя и отправляя данную форму Вы соглашаетесь <br>
-					с условиями политики конфиденциальности и <br>
-					обработки персональных данных
-				</p>
 			</div>
-
-			<form class="footer__form" action="#">
-				<h3>Форма обратной связи</h3>
-				<input type="text" name="name" placeholder="Ваше имя*" class="footer__form-input input">
-				<input type="tel" name="tel" placeholder="Ваш телефон*" class="footer__form-input input">
-				<button type="submit" class="footer__form-btn btn">Записаться на прием</button>
-			</form>
 
 		</div>
 	</div>

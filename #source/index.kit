@@ -27,26 +27,31 @@
 		<!-- @import "header.kit" -->
 
 		<main class="page">
-			<section id="about" class="about">
+			<section id="first" class="first">
 				<div class="container">
 
-					<div class="age_show">
-						Товары с ценой не выше <span id="price" class="price">100</span>$
+					<div class="first__flex-block d-flex">
+						<div class="first__descrip">
+							<h1>
+								Гидропонная установка <br>
+								у вас дома
+							</h1>
+							<div class="first__price-block d-flex">
+								<div class="first__price-old">5500 <span>руб.</span></div>
+								<div class="first__price-new">2500 <span>руб.</span></div>
+							</div>
+							<p>
+								Выращивайте свежую зелень прямо у себя дома <br>
+								вне зависимости от времени года и погоды на улице
+							</p>
+							<button class="first__btn btn">В КОРЗИНУ</button>
+						</div>
+						<div class="first__slider">
+							<div class="first__slider-img">
+								<img src="img/slider-product/sl-prod-01.png" alt="">
+							</div>
+						</div>
 					</div>
-					<input type="range" id="age" value="100" min="100" max="1000" oninput="changePrice(this.value)"
-						onchange="changePrice(this.value)">
-
-					<!-- 				<form class="header__form" action="#">
-					<input type="text" name="name" placeholder="Имя" class="input">
-					<input type="email" name="email" placeholder="e-mail" class="input__phone">
-					<input type="tel" name="tel" placeholder="Телефон" class="input__phone">
-					<button type="submit" class="form__btn btn">Жду звонка</button>
-					<p>
-						Нажимая на кнопку "Позвоните мне" я даю свое
-						согласие на обработку персональных данных и
-						принимаю условия соглашения
-					</p>
-				</form> -->
 				</div>
 			</section>
 

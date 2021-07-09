@@ -103,8 +103,7 @@ body {
   color: #737373;
   font-size: 22px;
   line-height: 33px;
-  font-weight: 400;
-  background: #F6F8F1; }
+  font-weight: 400; }
   body a {
     font-family: 'Circle';
     font-size: 18px;
@@ -145,8 +144,7 @@ h4 {
 .page {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 35px 0; }
+  flex: 1 1 auto; }
 
 .container {
   max-width: 1140px;
@@ -1162,6 +1160,62 @@ body.ie .ibg img {
     height: 37px;
     font-size: 18.5px;
     background: #FCA01F; }
+
+.first {
+  padding: 113px 0 141px 0;
+  background: #F6F8F1;
+  border-radius: 0 0 130px 130px; }
+
+.first__flex-block {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.first__descrip h1 {
+  color: #588668;
+  margin-bottom: 15px; }
+
+.first__price-block {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px; }
+
+.first__price-old {
+  font-size: 24px;
+  color: #000;
+  text-decoration: line-through;
+  margin-right: 21px; }
+
+.first__price-new {
+  font-size: 36px;
+  color: #fff;
+  padding: 6px;
+  background: #08800094;
+  border-radius: 5px; }
+
+.first__descrip p {
+  font-size: 22px;
+  line-height: 26.4px;
+  margin-bottom: 32px; }
+
+.first__btn {
+  min-width: 201px;
+  height: 76px;
+  font-size: 16px;
+  border-radius: 50px; }
+
+.first__slider-img {
+  max-width: 466px;
+  width: 100%;
+  max-height: 373px;
+  overflow: hidden; }
+
+.first__slider-img img {
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 @media (max-width: 1100px) {
   .container {

@@ -202,10 +202,14 @@
 }
 
 @media (max-width: 440px) {
-	.charact__line {
-    flex-direction: column; }
 	.advantages-block__item {
-			width: 50%; }
+		width: 50%; }
+	.charact__tab {
+		padding: 5px; }
+	.charact__value {
+		font-size: 14px; }
+	.charact__property {
+		font-size: 14px; }
 }
 
 @media (max-width: 414px) {
@@ -235,4 +239,9 @@
 		width: 80px;
 		height: 80px;
 		margin-bottom: 10px; }
+}
+
+@media (max-width: 340px) {
+	.charact__tab {
+		padding: 3px; }
 }

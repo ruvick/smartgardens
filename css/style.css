@@ -1635,13 +1635,14 @@ body.ie .ibg img {
     align-items: center; } }
 
 @media (max-width: 440px) {
-  .charact__line {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
   .advantages-block__item {
-    width: 50%; } }
+    width: 50%; }
+  .charact__tab {
+    padding: 5px; }
+  .charact__value {
+    font-size: 14px; }
+  .charact__property {
+    font-size: 14px; } }
 
 @media (max-width: 414px) {
   .first__btn {
@@ -1672,3 +1673,7 @@ body.ie .ibg img {
     width: 80px;
     height: 80px;
     margin-bottom: 10px; } }
+
+@media (max-width: 340px) {
+  .charact__tab {
+    padding: 3px; } }

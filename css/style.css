@@ -1116,7 +1116,7 @@ body.ie .ibg img {
   align-items: center; }
 
 .footer {
-  background: #86A298; }
+  background: #4D695A; }
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1124,43 +1124,56 @@ body.ie .ibg img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    min-height: 250px;
+    min-height: 163px;
     padding: 10px 10px !important; }
   .footer__row {
     width: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer__callback {
+    font-size: 23.83px;
+    font-weight: 700;
+    color: #fff;
+    position: relative; }
+    .footer__callback:before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: -18%;
+      width: 9px;
+      height: 9px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOS4wNzEiIGhlaWdodD0iOS4wNzEiIHZpZXdCb3g9IjAgMCA5LjA3MSA5LjA3MSI+DQogIDxkZWZzPg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMC41IiB5MT0iMSIgeDI9IjAuNSIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPg0KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWU3ODE1Ii8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmM1MjkiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICA8L2RlZnM+DQogIDxwYXRoIGlkPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQul8xX9C60L7Qv9C40Y8iIGRhdGEtbmFtZT0i0J/RgNGP0LzQvtGD0LPQvtC70YzQvdC40LogMSDQutC+0L/QuNGPIiBkPSJNODU1LjIwNywyOTk1LjI1N2wzLjUzNiwzLjUzNmExLDEsMCwwLDEsMCwxLjQxNGwtMy41MzYsMy41MzVhMSwxLDAsMCwxLTEuNDE0LDBsLTMuNTM2LTMuNTM1YTEsMSwwLDAsMSwwLTEuNDE0bDMuNTM2LTMuNTM2QTEsMSwwLDAsMSw4NTUuMjA3LDI5OTUuMjU3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg0OS45NjQgLTI5OTQuOTY0KSIgZmlsbD0idXJsKCNsaW5lYXItZ3JhZGllbnQpIi8+DQo8L3N2Zz4NCg=="); }
+    .footer__callback:after {
+      content: '';
+      position: absolute;
+      top: 30%;
+      right: -18%;
+      width: 9px;
+      height: 9px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOS4wNzEiIGhlaWdodD0iOS4wNzEiIHZpZXdCb3g9IjAgMCA5LjA3MSA5LjA3MSI+DQogIDxkZWZzPg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMC41IiB5MT0iMSIgeDI9IjAuNSIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPg0KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWU3ODE1Ii8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmM1MjkiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICA8L2RlZnM+DQogIDxwYXRoIGlkPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQul8xX9C60L7Qv9C40Y8iIGRhdGEtbmFtZT0i0J/RgNGP0LzQvtGD0LPQvtC70YzQvdC40LogMSDQutC+0L/QuNGPIiBkPSJNODU1LjIwNywyOTk1LjI1N2wzLjUzNiwzLjUzNmExLDEsMCwwLDEsMCwxLjQxNGwtMy41MzYsMy41MzVhMSwxLDAsMCwxLTEuNDE0LDBsLTMuNTM2LTMuNTM1YTEsMSwwLDAsMSwwLTEuNDE0bDMuNTM2LTMuNTM2QTEsMSwwLDAsMSw4NTUuMjA3LDI5OTUuMjU3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg0OS45NjQgLTI5OTQuOTY0KSIgZmlsbD0idXJsKCNsaW5lYXItZ3JhZGllbnQpIi8+DQo8L3N2Zz4NCg=="); }
+  .footer__menu {
+    max-width: 530px;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
-  .footer__menu li {
-    margin-bottom: 14.5px; }
     .footer__menu li:last-child {
       margin-bottom: 0; }
-  .footer__contact .header__callback {
-    margin-bottom: 25px; }
-  .footer__contact .header__callback a {
-    font-family: 'Lato';
-    font-size: 31px;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 16px; }
-  .footer__link-social {
-    display: block;
-    margin-bottom: 39px; }
-  .footer__policy {
-    font-size: 14px;
-    line-height: 18px; }
-  .footer__form {
-    max-width: 393px;
-    width: 100%; }
-    .footer__form h3 {
-      margin-bottom: 28px; }
-  .footer__form-input {
-    margin-bottom: 22px; }
-  .footer__form-btn {
-    width: 225px;
-    height: 37px;
-    font-size: 18.5px;
-    background: #FCA01F; }
+    .footer__menu li a {
+      font-size: 18px;
+      color: #fff; }
 
 .first {
   padding: 113px 0 141px 0;

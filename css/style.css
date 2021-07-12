@@ -1231,7 +1231,23 @@ body.ie .ibg img {
   object-fit: cover; }
 
 .about {
+  position: relative;
   padding: 87px 0 205px 0; }
+
+.about-bg-1 {
+  position: absolute;
+  top: 10%;
+  left: 2%; }
+
+.about-bg-2 {
+  position: absolute;
+  top: -9%;
+  right: -22%; }
+
+.about-bg-3 {
+  position: absolute;
+  top: 55%;
+  left: -5%; }
 
 .about h2 {
   color: #588668;
@@ -1244,7 +1260,14 @@ body.ie .ibg img {
   color: #588668;
   margin-bottom: 18px; }
 
+.about .container {
+  position: relative; }
+
 .advantages-block {
+  position: absolute;
+  bottom: -60%;
+  left: 0;
+  width: 100%;
   padding: 42px 50px 54px 50px;
   background: #fff;
   border-radius: 0 0 65px 0; }
@@ -1370,6 +1393,37 @@ body.ie .ibg img {
   .prod-card__price {
     font-size: 24px;
     font-weight: 700; }
+
+.charact__row {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #DDDFD8; }
+
+.charact__line {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.charact__tab {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 35%;
+  flex: 0 1 35%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 35px 20px 35px 35px;
+  border: 1px solid #DDDFD8; }
+
+.charact__value {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 8px; }
+
+.charact__property {
+  font-size: 20px;
+  line-height: 1;
+  color: #000; }
 
 @media (max-width: 1100px) {
   .container {

@@ -1379,10 +1379,14 @@ body.ie .ibg img {
       max-width: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
-  .prod-card__text h4 {
-    color: #737373;
-    line-height: 24px;
-    margin-bottom: 20px; }
+  .prod-card__text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+    .prod-card__text h4 {
+      color: #737373;
+      line-height: 24px;
+      margin-bottom: 20px; }
   .prod-card__price-item {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1488,7 +1492,11 @@ body.ie .ibg img {
     position: sticky;
     padding: 20px; }
   .charact__row {
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  .products {
+    padding: 50px 0; }
+  .prod-card__body {
+    padding: 10px; } }
 
 @media (max-width: 812px) {
   .header__container {
@@ -1552,7 +1560,14 @@ body.ie .ibg img {
     background: #EBEFE2;
     border-radius: 0; }
   .advantages-block {
-    border-radius: 0; } }
+    border-radius: 0; }
+  .prod-card__body {
+    padding: 20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 48%;
+    flex: 0 1 48%; }
+  .products {
+    padding: 30px 0; } }
 
 @media (max-width: 700px) {
   .mob-menu {
@@ -1580,7 +1595,9 @@ body.ie .ibg img {
   .advantages-block__row {
     padding: 0;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .prod-card__body {
+    padding: 10px; } }
 
 @media (max-width: 515px) {
   .first {
@@ -1594,7 +1611,16 @@ body.ie .ibg img {
   .advantages-block__item {
     width: 35%; }
   .about p {
-    text-align: justify; } }
+    text-align: justify; }
+  .prod-card {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .prod-card__body {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 80%;
+    flex: 0 1 80%;
+    padding: 20px; } }
 
 @media (max-width: 440px) {
   .charact__line {
@@ -1609,7 +1635,12 @@ body.ie .ibg img {
   .first__btn {
     width: 100%; }
   .first__descrip h1 {
-    font-size: 36px; } }
+    font-size: 36px; }
+  .prod-card__body {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    padding: 25px; } }
 
 @media (max-width: 360px) {
   .header__callback {

@@ -193,6 +193,12 @@
 		padding: 20px; }
 }
 
+@media (max-width: 460px) {
+	.footer__menu {
+		flex-direction: column;
+		align-items: center; }
+}
+
 @media (max-width: 440px) {
 	.charact__line {
     flex-direction: column; }

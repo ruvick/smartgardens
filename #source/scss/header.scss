@@ -44,7 +44,7 @@
 
 .menu {
 	flex: 0 1 525px;
-	height: 40px;
+	min-height: 40px;
 	&__body {}
 	// .menu__list
 	&__list {

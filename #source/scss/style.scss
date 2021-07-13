@@ -167,6 +167,7 @@ h4 {
 
 .first__price-block {
 	align-items: center;
+	padding-left: 8.5px;
 	margin-bottom: 15px;
 }
 
@@ -174,17 +175,38 @@ h4 {
 	font-size: 24px;
 	color: #000;
 	font-weight: 700;
-	text-decoration: line-through;
+	// text-decoration: line-through;
 	margin-right: 21px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: -10%;
+		width: 121px;
+		height: 2px;
+		background: #B49F9F;
+	}
 }
 
 .first__price-new {
 	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 800;
 	color: #f0ffeb;
 	padding: 6px;
 	background: #08800094;
-	border: 2px solid #a8e269;
+	border: 2px solid #A8E269;
 	border-radius: 7px;
+	min-width: 179px;
+	min-height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.first__price-new span {
+	margin-left: 10px;
 }
 
 .first__descrip p {
@@ -220,7 +242,7 @@ h4 {
 
 .first__slider .slick-dots {
 	position: absolute;
-	bottom: -8%;
+	bottom: -2%;
 	left: 0;
 	display: flex;
 	justify-content: center;

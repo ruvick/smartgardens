@@ -28,7 +28,7 @@
   width: 208px;
   height: 126px;
   overflow: hidden;
-	border-radius: 15px;
+	border-radius: 0px 0px 10px 10px;
 }
 .logo-icon span:before { 
 	content: '';
@@ -69,7 +69,8 @@
 
 .header__callback {
 	flex-direction: column;
-	flex: 0 0 143px;
+	// flex: 0 0 143px;
+	flex: 0 0 150px;
 	a {
 		font-size: 20px;
 		font-weight: 700;
@@ -80,6 +81,7 @@
 .header__popup-link {
 	font-size: 12px !important;
 	line-height: 1 !important;
+	letter-spacing: 0.05em;
 	font-weight: 700 !important;
 	color: #737373;
 	position: relative;
@@ -89,7 +91,7 @@
 		float: left;
 		width: 10px;
 		height: 10px;
-		margin-right: 14px;
+		margin-right: 8px;
 		background-size: 100%;
 		background-position: 0 0;
 		background-repeat: no-repeat;
@@ -97,11 +99,11 @@
 	}
 
 	&:after { 
-		content: '';
+    content: '';
     position: absolute;
-    bottom: -1px;
-    left: 25px;
-    width: 116px;
+    bottom: -2px;
+    left: 18px;
+    width: 125px;
     height: 1px;
 		border-bottom: 1px solid #737373;
 	}

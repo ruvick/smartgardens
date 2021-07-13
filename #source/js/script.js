@@ -28,13 +28,6 @@ if (menuListItemElems) {
 	});
 }
 
-// Строка поиска на мобилках 
-if (mobsearch) {
-	mobsearch.addEventListener("click", function () {
-		headsearch.classList.toggle("active");
-	});
-}
-
 // Закрытие моб меню при клике вне области меню 
 window.addEventListener('click', e => { // при клике в любом месте окна браузера
 	const target = e.target // находим элемент, на котором был клик
@@ -42,7 +35,6 @@ window.addEventListener('click', e => { // при клике в любом ме�
 		iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
 		menuBody.classList.remove('active')
 		body.classList.remove('lock')
-		headsearch.classList.remove('active')
 	}
 })
 
@@ -62,59 +54,6 @@ smotScrollElems.forEach(link => {
 		});
 	})
 });
-
-
-// Полоса прокрутки в шапке
-const scrollProgress = document.getElementById('scroll-progress');
-const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-window.addEventListener('scroll', () => {
-	const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-	scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
-});
-
-
-// Ползунок выбора цены
-const priceEl = document.querySelector(".price");
-
-function changePrice(price) {
-	priceEl.innerText = price;
-	console.log(price);
-};
-
-
-// Поочередное открытие нескольких блоков меню, табы, либо что то еще
-const BarIconElems = document.querySelectorAll('.sidebar__menu-open');
-const BarLinkIconElems = document.querySelectorAll('.sidebar__menu-icon');
-const BarSubMenuElems = document.querySelectorAll('.sidebar__submenu');
-
-BarIconElems.forEach((btn, index) => {
-	btn.addEventListener('click', () => {
-
-		if (!btn.classList.contains('sidebar__menu-icon_active')) {
-
-			BarSubMenuElems.forEach((BarSubMenuElem) => {
-				BarSubMenuElem.classList.remove('active')
-			});
-			BarIconElems.forEach((BarIconElem) => {
-				BarIconElem.classList.remove('sidebar__menu-icon_active')
-			});
-			BarLinkIconElems.forEach((BarLinkIconElem) => {
-				BarLinkIconElem.classList.remove('sidebar__menu-icon_active')
-			});
-
-			BarSubMenuElems[index].classList.add('active')
-			BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
-			btn.classList.add('sidebar__menu-icon_active')
-		} else {
-			BarSubMenuElems[index].classList.remove('active')
-			BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
-			btn.classList.remove('sidebar__menu-icon_active')
-		}
-	})
-})
-
-
 
 	// Маска телефона на JS
 	// function setCursorPosition(pos, elem) {

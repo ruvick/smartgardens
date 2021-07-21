@@ -54,3 +54,4 @@ jQuery('.header__form button').click(function (e) {
 
 });
 
+$(".fancybox").fancybox();

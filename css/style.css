@@ -1444,7 +1444,7 @@ body.ie .ibg img {
 
 .advantages-block {
   position: absolute;
-  bottom: -60%;
+  bottom: -28%;
   left: 0;
   width: 100%;
   padding: 42px 50px 54px 50px;
@@ -1590,6 +1590,13 @@ body.ie .ibg img {
     font-weight: 700; }
   .prod-card__btn {
     margin-left: auto; }
+
+.about__charact {
+  margin-bottom: 35px; }
+
+.about__video {
+  width: 100%;
+  border-radius: 5px; }
 
 .charact__row {
   border-radius: 15px;

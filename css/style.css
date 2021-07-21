@@ -966,16 +966,15 @@ body.ie .ibg img {
 
 .logo-icon {
   position: relative;
-  max-width: 208px;
-  width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 208px;
+  flex: 0 0 208px;
   height: 60px;
   margin-right: 38px; }
 
 .logo-icon:before {
   content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+  float: left;
   width: 100%;
   height: 100%;
   background-size: 100%;
@@ -1699,8 +1698,10 @@ body.ie .ibg img {
     min-height: 80px;
     padding: 15px 0; }
   .logo-icon {
-    max-width: 135px;
-    width: 100%; }
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 135px;
+    flex: 0 0 135px;
+    height: 45px; }
   .logo-icon span {
     top: -40px;
     width: 130px;
@@ -1723,13 +1724,18 @@ body.ie .ibg img {
     width: 100%;
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
-  .header__container {
-    padding: 0 10px; }
   .header__row {
     min-height: 50px;
     padding: 10px 0; }
   .icon-menu {
     display: block; }
+  .logo-icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 190px;
+    flex: 0 0 190px;
+    height: 40px; }
+  .logo-icon:before {
+    background-position: 50%; }
   .logo-icon span {
     top: -25px;
     width: 180px;
@@ -1828,6 +1834,14 @@ body.ie .ibg img {
   .popup__form-block {
     padding: 35px 15px; } }
 
+@media (max-width: 480px) {
+  .logo-icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 140px;
+    flex: 0 0 140px; }
+  .menu {
+    margin-right: 0; } }
+
 @media (max-width: 460px) {
   .footer__menu {
     -webkit-box-orient: vertical;
@@ -1849,6 +1863,11 @@ body.ie .ibg img {
     font-size: 14px; } }
 
 @media (max-width: 414px) {
+  .logo-icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
+    margin-right: 5px; }
   .first__btn {
     width: 100%; }
   .first__descrip h1 {
@@ -1858,6 +1877,12 @@ body.ie .ibg img {
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
     padding: 25px; } }
+
+@media (max-width: 380px) {
+  .logo-icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px; } }
 
 @media (max-width: 360px) {
   .header__callback {
@@ -1876,7 +1901,15 @@ body.ie .ibg img {
   .advantages-block__item-icon {
     width: 80px;
     height: 80px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .logo-icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 160px;
+    flex: 0 0 160px; }
+  .header__contacts {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 90px;
+    flex: 0 0 90px; } }
 
 @media (max-width: 340px) {
   .charact__tab {
